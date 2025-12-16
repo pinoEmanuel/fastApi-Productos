@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import productos
+from routers import productos, clientes
 from database.engine import Base, engine
 
 app = FastAPI()
@@ -7,3 +7,4 @@ app = FastAPI()
 Base.metadata.create_all(bind=engine)
 
 app.include_router(productos.router)
+app.include_router(clientes.router)

@@ -4,6 +4,7 @@ class ProductoBase(BaseModel):
     nombre : str
     precio : float
     stock_inicial : int
+    cliente_id : int
 
 class ProductoCreate(ProductoBase):
     pass

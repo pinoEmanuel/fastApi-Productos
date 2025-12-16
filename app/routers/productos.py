@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
-from database.models import Producto
+from database.producto import Producto
 from database.deps import get_db
 from schemas.producto import ProductoIn, ProductoOut, ProductoUpdate
 
